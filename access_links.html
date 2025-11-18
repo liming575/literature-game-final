@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文学社 - 访问链接</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 30px;
+        }
+        
+        .links-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+        }
+        
+        .links-section h2 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .link-item {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f7fafc;
+            border-radius: 8px;
+            border-left: 4px solid #3182ce;
+        }
+        
+        .link-item h3 {
+            margin: 0 0 8px 0;
+            color: #2d3748;
+            font-size: 16px;
+        }
+        
+        .link-item p {
+            margin: 0 0 10px 0;
+            color: #4a5568;
+            font-size: 14px;
+        }
+        
+        .link-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #3182ce, #2c5aa0);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(49, 130, 206, 0.4);
+        }
+        
+        .backup-link {
+            border-left-color: #38a169;
+        }
+        
+        .backup-link .link-button {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+        }
+        
+        .copy-link {
+            background: #edf2f7;
+            color: #4a5568;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            margin-top: 8px;
+            word-break: break-all;
+            cursor: pointer;
+        }
+        
+        .copy-link:hover {
+            background: #e2e8f0;
+        }
+        
+        .instructions {
+            background: #ebf8ff;
+            border: 1px solid #3182ce;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .instructions h3 {
+            margin: 0 0 10px 0;
+            color: #2c5282;
+        }
+        
+        .instructions ul {
+            margin: 0;
+            color: #2c5282;
+            padding-left: 20px;
+        }
+        
+        .test-result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .success {
+            background: #c6f6d5;
+            color: #22543d;
+            border: 1px solid #38a169;
+        }
+        
+        .warning {
+            background: #fef5e7;
+            color: #744210;
+            border: 1px solid #d69e2e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 文学社云端同步平台</h1>
+        <p style="text-align: center; color: #718096; margin-bottom: 30px;">☁️ 多设备故事创作与同步平台 - 让每个人都能成为故事的作者</p>
+        
+        <div class="links-section">
+            <h2>🌍 主访问链接</h2>
+            <p style="color: #718096; font-size: 14px;">推荐使用，支持完整功能（苹果手机、电脑均可正常访问）</p>
+            
+            <div class="link-item">
+                <h3>GitHub Pages 主链接</h3>
+                <p>完整的云端同步功能，支持跨设备数据同步</p>
+                <a href="https://liming575.github.io/literature-game-final/" target="_blank" class="link-button">🚀 立即访问</a>
+                <div class="copy-link" onclick="copyToClipboard('https://liming575.github.io/literature-game-final/')">📋 点击复制链接</div>
+            </div>
+        </div>
+        
+        <div class="links-section backup-link">
+            <h2>🇨🇳 国内镜像备用链接</h2>
+            <p style="color: #718096; font-size: 14px;">针对 vivo、华为鸿蒙等系统优化，解决网络访问问题</p>
+            
+            <div class="link-item">
+                <h3>ghproxy.com 镜像</h3>
+                <p>国内优化访问，提升加载速度和稳定性</p>
+                <a href="https://ghproxy.com/https://liming575.github.io/literature-game-final/" target="_blank" class="link-button">🚀 备用访问</a>
+                <div class="copy-link" onclick="copyToClipboard('https://ghproxy.com/https://liming575.github.io/literature-game-final/')">📋 点击复制链接</div>
+            </div>
+            
+            <div class="link-item">
+                <h3>fastgit.org 镜像</h3>
+                <p>GitHub加速镜像，提供更快的访问体验</p>
+                <a href="https://fastgit.org/literature-game-final/" target="_blank" class="link-button">🚀 备用访问</a>
+                <div class="copy-link" onclick="copyToClipboard('https://fastgit.org/literature-game-final/')">📋 点击复制链接</div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>💡 使用说明</h3>
+            <ul>
+                <li><strong>正常访问</strong>：优先使用主链接，功能最完整</li>
+                <li><strong>访问失败</strong>：如无法打开主链接，请尝试国内镜像链接</li>
+                <li><strong>移动端用户</strong>：vivo、华为鸿蒙用户建议使用国内镜像</li>
+                <li><strong>分享给他人</strong>：可分享任意一个链接，对方会自动选择最优访问方式</li>
+            </ul>
+        </div>
+        
+        <div class="instructions" style="background: #fef5e7; border-color: #d69e2e;">
+            <h3>🔧 如遇问题</h3>
+            <ul>
+                <li><strong>仍然打不开</strong>：请尝试更换浏览器（微信内置浏览器、UC浏览器、QQ浏览器等）</li>
+                <li><strong>加载缓慢</strong>：切换到WiFi或更换网络环境</li>
+                <li><strong>功能异常</strong>：清除浏览器缓存后重试</li>
+            </ul>
+        </div>
+        
+        <div class="instructions" style="background: #f0fff4; border-color: #38a169;">
+            <h3>☁️ 云端同步功能</h3>
+            <ul>
+                <li><strong>首次使用</strong>：无需配置，直接开始创作</li>
+                <li><strong>云端同步</strong>：点击"⚙️ 配置令牌"设置GitHub访问令牌</li>
+                <li><strong>多设备同步</strong>：设置云端同步后，数据将在所有设备间自动同步</li>
+                <li><strong>数据安全</strong>：本地和云端双重备份，数据永不丢失</li>
+            </ul>
+        </div>
+        
+        <div id="test-result" class="test-result" style="display: none;"></div>
+    </div>
+    
+    <script>
+        // 测试主链接可访问性
+        function testMainLink() {
+            const testLink = 'https://liming575.github.io/literature-game-final/';
+            fetch(testLink, { mode: 'no-cors' })
+                .then(() => {
+                    showTestResult('success', '✅ 主链接可正常访问');
+                })
+                .catch(() => {
+                    showTestResult('warning', '⚠️ 主链接访问失败，建议使用国内镜像链接');
+                });
+        }
+        
+        // 显示测试结果
+        function showTestResult(type, message) {
+            const resultDiv = document.getElementById('test-result');
+            resultDiv.className = `test-result ${type}`;
+            resultDiv.innerHTML = message;
+            resultDiv.style.display = 'block';
+            
+            // 5秒后隐藏结果
+            setTimeout(() => {
+                resultDiv.style.display = 'none';
+            }, 5000);
+        }
+        
+        // 复制链接到剪贴板
+        function copyToClipboard(text) {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showTestResult('success', '✅ 链接已复制到剪贴板');
+                });
+            } else {
+                // 兼容老浏览器
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showTestResult('success', '✅ 链接已复制到剪贴板');
+            }
+        }
+        
+        // 页面加载完成后自动测试主链接
+        window.addEventListener('load', () => {
+            setTimeout(testMainLink, 1000);
+        });
+        
+        // 添加链接点击统计
+        document.querySelectorAll('.link-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                console.log('访问链接:', e.target.href);
+            });
+        });
+    </script>
+</body>
+</html>
